@@ -37,11 +37,6 @@
 └── .pre-commit-config.yaml <- Configuration of pre-commit git hooks.
 ```
 
-## Note
-
-This project has been set up using PyScaffold 3.2.3 and the [dsproject extension] 0.4.
-For details and usage information on PyScaffold see https://pyscaffold.org/.
-
 [conda]: https://docs.conda.io/
 [pre-commit]: https://pre-commit.com/
 [Jupyter]: https://jupyter.org/

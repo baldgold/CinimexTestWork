@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cinimex</title>
+        <style>
+            H1 {
+                font-family: 'Arno Pro','serif','Helvetica Nue', sans-serif;
+                }
+
+            P {
+                font-family:'Arno Pro', 'serif', 'Roboto', 'Helvetica Nue', sans-serif;
+                color: red;
+            }
+
+            LI{
+                color: black;
+                font-family:'Franklin Gothic';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Доброго времени суток!</h1>
+        <p> Это моё маленькое REST API. Ниже будут представлены все возможные HTTP-запросы и их функционал. </p>
+        <p> Далее под "session_id" будем понимать пользовательский ввод, корректный вид которого следующий: <strong> от u10001 до u400000 (ВКЛЮЧИТЕЛЬНО).</strong></p>
+
+        <p>
+            <ul>
+                <li><a href = 'http://localhost:5000/help'>http://localhost:5000/help </a> - Возвращает список возможных HTTP-запросов.</li>
+
+                <li><a href = 'http://localhost:5000/info/avg/default'>http://localhost:5000/info/avg/default </a> - Выводит сообщение о том, чтобы пользователь заменил "/default"  на нужный ему "session_id".</li>
+
+                <li><a href = 'http://localhost:5000/info/percent/default'>http://localhost:5000/info/percent/default </a> - Выводит сообщение о том, чтобы пользователь заменил "/default"  на нужный ему "session_id".</li>
+
+                <li>http://localhost:5000/info/avg/"session_id" - Возвращает список словарей, который содержит количество просмотров пользователя в каждой категории в
+                    <strong>абсолютных велечинах</strong>.</li>
+
+                <li>http://localhost:5000/info/percent/"session_id" - Возвращает список словарей, который содержит количество просмотров пользователя в каждой категории в
+                    <strong>процентном соотношении</strong>.</li>
+
+                <li>http://localhost:5000/predict/"session_id" - Прогнозирование пола пользователя по "session_id".</li>
+
+                <li>http://localhost:5000/predict/avg/"session_id" - Прогнозирование пола пользователя по "session_id" с информацией о сайтах, которые он посещал в
+                    <strong>абсолютных значениях</strong>.</li>
+
+                <li>http://localhost:5000/predict/percent/"session_id" - Прогнозирование пола пользователя по "session_id" с информацией о сайтах, которые он посещал в
+                    <strong>процентном соотношении</strong>.</li>
+            </ul>
+        </p>
+    </body>
+</html>
